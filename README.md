@@ -1,5 +1,11 @@
 # vim setup
 
+Deploy with `setup_vim.fyi` in `penguin-dev-tools`
+
+#### Additional Steps
+
+`YouCompleteMe` plugin requires extra setup:
 ```sh
-zsh -c "$(curl -fsSL https://git.linuxit.us/spider/vim/raw/branch/main/setup.zsh)"
+cd $HOME/.vim/bundle/YouCompleteMe
+python3 install.py
 ```
