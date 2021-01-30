@@ -1,4 +1,4 @@
-# vim setup
+# vim config
 
 Deploy with `setup_vim.fyi` in `penguin-dev-tools`
 
