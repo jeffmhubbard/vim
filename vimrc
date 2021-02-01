@@ -191,13 +191,13 @@ let g:lightline.component_type = {
     \     'linter_checking': 'normal',
     \     'linter_warnings': 'warning',
     \     'linter_errors': 'error',
-    \     'linter_ok': 'left',
+    \     'linter_ok': 'ok',
     \ }
 
 let g:lightline#ale#indicator_checking = " "
 let g:lightline#ale#indicator_warnings = " "
 let g:lightline#ale#indicator_errors = " "
-let g:lightline#ale#indicator_ok = ""
+let g:lightline#ale#indicator_ok = " "
 
 
 " scrooloose/nerdtree
@@ -263,7 +263,7 @@ nmap <leader>\t :TagbarToggle<CR>
 
 
 " w0rp/ale
-let b:ale_linters = ['pyflakes', 'flake8', 'shellcheck']
+let b:ale_linters = ['pyflakes', 'flake8', 'shellcheck', 'luacheck']
 let g:ale_fixers = {
     \ '*': ['remove_trailing_lines', 'trim_whitespace'],
     \ 'javascript': ['eslint'],
